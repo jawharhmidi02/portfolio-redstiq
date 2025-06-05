@@ -59,8 +59,13 @@ module.exports = {
         },
       },
       fontFamily: {
-        pixel: ['"Press Start 2P"', "Courier New", "monospace"],
-        sans: ["Inter", "sans-serif"],
+        pixel: [
+          "var(--font-pixel)",
+          "Press Start 2P",
+          "Courier New",
+          "monospace",
+        ],
+        sans: ["var(--font-inter)", "Inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -86,4 +91,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
