@@ -11,8 +11,8 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    optimizeCss: true,
+    // optimizeCss: true,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
