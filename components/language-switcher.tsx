@@ -15,11 +15,14 @@ export function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 p-2 bg-minecraft-gold border-2 border-minecraft-darkGrass shadow-pixel-sm hover:shadow-pixel transition-all duration-200 hover:-translate-y-1"
+        className="flex items-center space-x-1 sm:space-x-2 p-1 sm:p-2 bg-minecraft-gold border-2 border-minecraft-darkGrass shadow-pixel-sm hover:shadow-pixel transition-all duration-200 hover:-translate-y-1"
         aria-label={t.common.changeLanguage}
       >
-        <Globe size={16} />
-        <span className="font-pixel text-xs">{currentLanguage?.name}</span>
+        <Globe size={16} className="hidden sm:block" />
+        <span className="block sm:hidden">{currentLanguage?.flag}</span>
+        <span className="font-pixel text-xs hidden sm:block">
+          {currentLanguage?.name}
+        </span>
         <ChevronDown
           size={12}
           className={`transition-transform ${isOpen ? "rotate-180" : ""}`}

@@ -28,7 +28,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden mt-14 sm:mt-0">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-20">
         {backgroundElements.map((element) => (

@@ -82,7 +82,7 @@ export function Projects() {
 
   return (
     <section id="projects" className="py-20 relative">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2 sm:px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

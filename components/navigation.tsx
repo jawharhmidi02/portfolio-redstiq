@@ -71,7 +71,7 @@ export function Navigation() {
           </div>
 
           {/* Controls */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 min-[420px]:space-x-4">
             <LanguageSwitcher />
 
             <button
