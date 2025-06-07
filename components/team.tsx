@@ -11,7 +11,7 @@ export function Team() {
     {
       name: t.team.members.jawhar.name,
       role: t.team.members.jawhar.role,
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/jawhar-pfp.jpg",
       bio: t.team.members.jawhar.bio,
       skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
       social: {
@@ -23,7 +23,7 @@ export function Team() {
     {
       name: t.team.members.naim.name,
       role: t.team.members.naim.role,
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/naim-pfp.jpeg",
       bio: t.team.members.naim.bio,
       skills: ["Node.js", "PostgreSQL", "MongoDB", "Express.js"],
       social: {

@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import { ProjectDetail } from "@/components/project-detail";
 
-// This would typically come from a database or CMS
 const projects = {
   "ecommerce-platform": {
     id: "ecommerce-platform",

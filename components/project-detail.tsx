@@ -13,6 +13,7 @@ import {
   Lightbulb,
   TrendingUp,
 } from "lucide-react";
+import { Button } from "./ui/button";
 
 interface Project {
   id: string;
@@ -68,11 +69,11 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
         >
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
             <div>
-              <div className="flex items-center space-x-4 mb-4">
+              <div className="flex sm:items-center sm:flex-row flex-col space-y-2 sm:space-y-0 sm:space-x-4 mb-4">
                 <h1 className="font-pixel text-3xl text-gray-900 dark:text-white">
                   {project.title}
                 </h1>
-                <span className="px-3 py-1 bg-minecraft-emerald border-2 border-minecraft-darkGrass font-pixel text-sm text-gray-900">
+                <span className="px-3 py-1 bg-minecraft-emerald border-2 w-fit border-minecraft-darkGrass font-pixel text-sm text-gray-900">
                   {project.category}
                 </span>
               </div>
@@ -81,7 +82,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
               </p>
             </div>
 
-            <div className="flex space-x-4">
+            <div className="flex flex-col min-[480px]:flex-row space-y-2 min-[480px]:space-y-0 min-[480px]:space-x-4 ">
               <a
                 href={project.liveUrl}
                 target="_blank"
@@ -324,7 +325,10 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
               Let's craft something amazing together. Get in touch to discuss
               your next project.
             </p>
-            <Link href="/#contact" className="minecraft-button">
+            <Link
+              href="/#contact"
+              className="max-[390px]:px-2 max-[390px]:text-[12px] minecraft-button"
+            >
               Start Your Project
             </Link>
           </div>
