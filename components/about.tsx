@@ -31,7 +31,7 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-20 relative">
+    <section id="about" className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
