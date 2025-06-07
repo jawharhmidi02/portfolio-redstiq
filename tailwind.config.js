@@ -59,13 +59,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        pixel: [
-          "var(--font-pixel)",
-          "Press Start 2P",
-          "Courier New",
-          "monospace",
-        ],
-        sans: ["var(--font-inter)", "Inter", "sans-serif"],
+        pixel: ['"Press Start 2P"', "Courier New", "monospace"],
+        sans: ["Inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
